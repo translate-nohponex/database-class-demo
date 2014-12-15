@@ -74,6 +74,7 @@
 			<a href="#" class="button" 				data-i18="sign_up_btn"></a>
 			<a href="#" class="button button-green" data-i18="login_btn"></a>
 		</div>
+		<button type="button" onclick="window.translate.initialize( 'keywords' );">Show keywords</button> 
         <button type="button" onclick="window.translate.initialize( 'gr' );">Language : gr <span class="flag flag-gr"></span></button> 
         <button type="button" onclick="window.translate.initialize( 'en' );">Language : en <span class="flag flag-en"></span></button> 
         <button type="button" onclick="window.translate.initialize( 'de' );">Language : de <span class="flag flag-de"></span></button> 
@@ -104,7 +105,7 @@
     <script type="text/javascript">
     $(function() {
         //Translate this page on load in greek language
-        window.translate = new $.fn.Translate( { project_id : 19, language : 'gr', API_KEY : '614a98a31bd17b3a82094ef0388b9d81', cache_duration:1 } );
+        window.translate = new $.fn.Translate( { project_id : 19, language : 'keywords', API_KEY : '614a98a31bd17b3a82094ef0388b9d81', cache_duration:1 } );
 
         //translate.initialize( );
     });
